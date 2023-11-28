@@ -3,16 +3,12 @@ const programmiWindows = {
     "activeTab": 0
 }
 
-let {Facebook, youtube} = social 
-
-let {GitHub, Gmail} = noSocial
-
-console.log(social, noSocial)
+const social = ['favebook', 'youtube']
 
 
-const presente = tab.filter ((programmi) => {
-    if(programmi == social){
-
+programmiWindows.tab = programmiWindows.tab.filter((element) => {
+    if (!social.includes (element.toLowerCase())){
+        return true
     }
-
-})
+});
+console.log(programmiWindows)
